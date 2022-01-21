@@ -533,6 +533,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -649,6 +653,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -700,6 +708,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1rem;
 }
 
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .pl-14 {
   padding-left: 3.5rem;
 }
@@ -726,6 +739,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-14 {
   padding-top: 3.5rem;
+}
+
+.pl-24 {
+  padding-left: 6rem;
+}
+
+.pr-24 {
+  padding-right: 6rem;
 }
 
 .text-left {
@@ -793,6 +814,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .sm\:pl-32 {
+    padding-left: 8rem;
+  }
+
+  .sm\:pr-32 {
+    padding-right: 8rem;
+  }
+
+  .sm\:pl-20 {
+    padding-left: 5rem;
+  }
+
+  .sm\:pr-20 {
+    padding-right: 5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
@@ -800,6 +843,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:flex-wrap {
     flex-wrap: wrap;
+  }
+
+  .md\:pl-20 {
+    padding-left: 5rem;
+  }
+
+  .md\:pr-20 {
+    padding-right: 5rem;
   }
 }
 
@@ -815,10 +866,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:flex-wrap {
     flex-wrap: wrap;
   }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:pl-20 {
+    padding-left: 5rem;
+  }
+
+  .lg\:pr-20 {
+    padding-right: 5rem;
+  }
 }
 
 @media (min-width: 1280px) {
   .xl\:max-w-7xl {
     max-width: 80rem;
+  }
+
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
