@@ -1,3 +1,92 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+
+.w1 {
+    animation: ani1 15s infinite
+}   
+.w2 {
+    animation: ani2 15s infinite
+}   
+.w3 {
+    animation: ani3 15s infinite
+}   
+.w4 {
+    animation: ani4 15s infinite
+}   
+.w5 {
+    animation: ani5 15s infinite
+}   
+
+/* .change {
+    @apply text-gray-100 text-center text-3xl mt-6 uppercase
+} */
+.box{
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
+}
+
+@keyframes ani1 {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+}
+@keyframes ani2 {
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+@keyframes ani3 {
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+}
+@keyframes ani4 {
+    60% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+@keyframes ani5 {
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+

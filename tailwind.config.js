@@ -2,6 +2,10 @@ module.exports = {
   content: ["./index.html"],
   theme: {
     extend: {
+      backgroundImage: {
+        'humvee': "url('https://desque.sfo3.digitaloceanspaces.com/kevin/Homeland_Home_Humvee3.png')",
+        'city': "url('https://desque.sfo3.digitaloceanspaces.com/kevin/Homeland_Home_City.png')",
+      },
       colors: {
         'hlblue': '#020C6A',
       },
