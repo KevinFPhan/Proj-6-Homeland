@@ -8,6 +8,7 @@ module.exports = {
       },
       colors: {
         'hlblue': '#020C6A',
+        'hlred': '#FF2A13'
       },
       height: {
         '8h': '800px',

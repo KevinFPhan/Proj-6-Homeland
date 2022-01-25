@@ -11,19 +11,40 @@
     <link rel="stylesheet" href="tailwind.css">
     <title>Document</title>
 </head>
-<body class="bg-red-400">
+<body id="client">
     <div class="fixed h-20 overflow-hidden bg-white w-full ">
         <div class=" h-full flex justify-between mx-auto pl-14 pr-14 max-w-7xl">
             <img class="h-auto scale-75" src="https://desque.sfo3.digitaloceanspaces.com/kevin/Homeland_Home_NavLogo.png" alt="">
             <div class="hidden md:flex items-center text-sm font-bold ">
-                <a href="./index.html" class="uppercase p-4 hover:text-black text-gray-400 ">Home</a>
-                <a href="./client.html" class="p-4 uppercase hover:text-black text-gray-400 ">Client Portal</a>
+                <div class="links border-t-white border-t-4 hover:border-t-gray-200 p-4 h-full flex  items-center">
+                    <a data-active="home" href="index.html" class="w-full uppercase p-7 hover:text-black text-gray-400  ">Home</a>
+                </div>
+                <div class="links  p-4 h-full flex  items-center mr-2">
+                    <a data-active="client" href="./client.html" class="p-7 w-full uppercase hover:text-black text-gray-400 ">Client Portal</a>
+                </div>
             </div>
         </div>
     </div>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eius eligendi assumenda tenetur, cupiditate nulla asperiores magni blanditiis reprehenderit. Esse asperiores quis est eaque accusantium itaque voluptatibus labore, corporis fugit? Nihil possimus veniam laboriosam error tempora perspiciatis mollitia eum ex eligendi, sapiente vel repellat, sed sint optio. Voluptate, possimus necessitatibus.</p>
+    <div id="sect1" class=" bg-hlblue  h-screen flex justify-center items-center  ">
+         <div class="border-4 rounded-2xl h-auto w-1/6 p-4 text-white flex flex-col items-center ">
+            <img class="h-28 w-auto overflow-hidden" src="https://desque.sfo3.digitaloceanspaces.com/kevin/Homeland_Home_HeaderLogo1.png" alt="">
+            <form class="w-full mt-10" action="">
+                <div class="flex flex-col items-center w-full">
+                    <label class="text-sm" for="login">Login</label>
+                    <input class="w-full rounded py-1 pl-1 text-black focus:outline-none" type="text" required>
+                </div>   
+                <div class="flex flex-col items-center w-full mt-2">
+                    <label class="text-sm" for="password">Password</label>
+                    <input class="w-full rounded py-1 pl-1 text-black focus:outline-none" type="password" required>
+                </div>   
+                <div class=" flex justify-center items-center mt-6">
+                    <button class="bg-white px-4 py-2 rounded-lg text-black text-sm" type="button">Login</button>
+                </div>
+            </form>
+         </div>
     </div>
+    
+    <script src="app.js"></script>
   
 </body>
 </html>
