@@ -11,6 +11,7 @@ module.exports = {
         'hlred': '#FF2A13'
       },
       height: {
+        '50vh': '50vh',
         '8h': '800px',
         '285': '285px',
         '7h': '700px',
