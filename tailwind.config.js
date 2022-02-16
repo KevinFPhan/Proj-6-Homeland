@@ -2,6 +2,9 @@ module.exports = {
   content: ["./index.html","./client.html"],
   theme: {
     extend: {
+      boxShadow: {
+        'inner1' : 'inset 0 1px 4px rgba(0, 0, 0, 0.25)'
+      },
       backgroundImage: {
         'humvee': "url('https://desque.sfo3.digitaloceanspaces.com/kevin/Homeland_Home_Humvee3.png')",
         'city': "url('https://desque.sfo3.digitaloceanspaces.com/kevin/Homeland_Home_City.png')",

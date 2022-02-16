@@ -6,6 +6,14 @@ const navLinks = document.querySelectorAll('.links a').forEach(link => {
     }
 })
 
+// Active Link Dropdown 
+const navLinksdd = document.querySelectorAll('.linksdd a').forEach(link => {
+    if(link.href.includes(`${activePage}`)){
+        link.classList.add('activedd');
+    
+    }
+})
+
 
 // function handleFormSubmit(event) {
     
@@ -66,4 +74,25 @@ form.addEventListener('submit', (e) => {
 
 function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
+
+function myFunction() {
+    document.querySelector("#myDropdown").classList.toggle("show");
+    document.querySelector("#myDropdown").classList.toggle("dropdownmenu");
+    console.log("hello");
+
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn1')) {
+  
+        var dropdowns = document.getElementsByClassName("dropdown-content1");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            }
+        }
+    }
 }
